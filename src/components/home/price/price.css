@@ -1,0 +1,105 @@
+/*.price {
+  text-align: center;
+}
+.price .content .box {
+  width: 31.5%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.price button {
+  margin-bottom: 20px;
+}
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+ display: none;
+ 
+}
+.price h3 {
+  font-size: 20px;
+}
+.price h1 {
+  font-size: 60px;
+}
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.price ul {
+  margin-top: 40px;
+}
+.price ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.price .btn5 {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+  }
+
+  .price .content .box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}
+*/
+/* PriceCard styles */
+
+.content {
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+ 
+.price .content .box {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.box {
+  border-radius: 10px; /* Adds rounded corners */
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  /*position: relative;  Needed for absolute positioning */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.topbtn {
+  margin-bottom: 10px;
+}
+
+.btn3,
+.btn5 {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn3:hover {
+  background-color: #28a745; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.btn5:hover {
+  background-color: #27ae60; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+  
